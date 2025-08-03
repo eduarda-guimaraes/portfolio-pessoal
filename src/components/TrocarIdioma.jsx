@@ -1,23 +1,15 @@
 import React from 'react';
+import '../styles/global.css'; // ajuste o caminho se estiver em outra pasta
 
 function TrocarIdioma({ idioma, setIdioma }) {
+  const handleChange = () => {
+    setIdioma(idioma === 'pt' ? 'en' : 'pt');
+  };
+
   return (
-    <div>
-      <button
-        className="btn btn-outline-primary btn-sm me-2"
-        onClick={() => setIdioma('pt')}
-        disabled={idioma === 'pt'}
-      >
-        PT
-      </button>
-      <button
-        className="btn btn-outline-primary btn-sm"
-        onClick={() => setIdioma('en')}
-        disabled={idioma === 'en'}
-      >
-        EN
-      </button>
-    </div>
+    <button onClick={handleChange} className="btn-idioma">
+      {idioma === 'pt' ? 'EN' : 'PT'}
+    </button>
   );
 }
 

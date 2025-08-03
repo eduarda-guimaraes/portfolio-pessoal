@@ -14,7 +14,7 @@ function App() {
       <main>
         {idioma === 'pt' ? <HomePT /> : <HomeEN />}
       </main>
-      <Footer />
+      <Footer idioma={idioma} />
     </>
   );
 }

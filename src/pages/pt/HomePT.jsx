@@ -9,7 +9,7 @@ function HomePT() {
         marginTop: '7rem'
       }}
     >
-      <section className="mb-4">
+      <section id="#sobre" className="mb-4">
         <h2>👋 Sobre Mim</h2>
         <p>
           Olá! Meu nome é Eduarda Guimarães e sou desenvolvedora full-stack apaixonada por tecnologia,
@@ -18,14 +18,14 @@ function HomePT() {
         </p>
       </section>
 
-      <section className="mb-4">
+      <section id="#projetos" className="mb-4">
         <h2>💼 Projetos</h2>
         <ul>
           <li>Vocational Test — Teste vocacional com inteligência artificial</li>
         </ul>
       </section>
 
-      <section>
+      <section id="#contato">
         <h2>📫 Contato</h2>
         <p>Entre em contato comigo por e-mail: eduarda@email.com</p>
       </section>
