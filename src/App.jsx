@@ -19,10 +19,11 @@ function App() {
         });
       },
       {
-        threshold: 0.1, // detecta com 25% da seção visível
-        rootMargin: '-120px 0px 0px 0px' // compensa altura do header
+        threshold: 0.01,
+        rootMargin: '-10% 0px -40% 0px'
       }
     );
+
 
     const secoes = document.querySelectorAll('section[id]');
     secoes.forEach((secao) => observer.observe(secao));

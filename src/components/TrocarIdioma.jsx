@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/global.css'; // ajuste o caminho se estiver em outra pasta
+import '../styles/global.css';
 
 function TrocarIdioma({ idioma, setIdioma }) {
   const handleChange = () => {
@@ -7,8 +7,13 @@ function TrocarIdioma({ idioma, setIdioma }) {
   };
 
   return (
-    <button onClick={handleChange} className="btn-idioma">
-      {idioma === 'pt' ? 'EN' : 'PT'}
+    <button
+      onClick={handleChange}
+      className="btn-idioma d-flex align-items-center gap-2"
+      aria-label="Trocar idioma"
+      title="Trocar idioma"
+    >
+       {idioma === 'pt' ? 'English' : 'Português'}
     </button>
   );
 }

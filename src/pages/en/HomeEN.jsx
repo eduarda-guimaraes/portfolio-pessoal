@@ -19,8 +19,17 @@ function HomeEN() {
               Eduarda Guimarães
             </h1>
             <p className="text-muted mb-4">
-              I'm a full-stack developer passionate about technology, artificial intelligence, and web development. I'm always seeking to build creative and functional solutions that positively impact people.
+              I'm a student at the <strong>Monteiro Lobato State Technical School</strong>, currently enrolled in the <strong>Technical Informatics Program</strong>. I work as a full-stack developer with a passion for <strong>technology</strong>, <strong>artificial intelligence</strong>, and <strong>web development</strong>.
+
+              <br /><br />
+
+              I have hands-on experience with various technologies including <strong>React</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>Firebase</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>, <strong>Python</strong>, <strong>C</strong>, <strong>C#</strong>, and <strong>Java</strong>. I also have a strong interest in <strong>databases</strong>, both SQL (like MySQL) and NoSQL (like Firestore), with a focus on modeling and integration.
+
+              <br /><br />
+
+              I'm always looking to learn something new, tackle challenges with creativity, and collaborate on projects that make a positive impact on people's lives.
             </p>
+
             <div className="d-flex flex-wrap gap-3">
               <a
                 href="mailto:eduardaguima2007@yahoo.com"
@@ -53,13 +62,35 @@ function HomeEN() {
             />
           </div>
         </div>
+
+        {/* TECHNOLOGIES */}
+        <div className="mt-4">
+          <h5 className="fw-bold mb-3" style={{ color: '#6a1b9a' }}>
+            Technologies I use:
+          </h5>
+          <div className="d-flex flex-wrap gap-2">
+            <span className="badge bg-secondary">HTML</span>
+            <span className="badge bg-secondary">CSS</span>
+            <span className="badge bg-secondary">JavaScript</span>
+            <span className="badge bg-secondary">React</span>
+            <span className="badge bg-secondary">Node.js</span>
+            <span className="badge bg-secondary">Firebase</span>
+            <span className="badge bg-secondary">Bootstrap</span>
+            <span className="badge bg-secondary">Python</span>
+            <span className="badge bg-secondary">C</span>
+            <span className="badge bg-secondary">C#</span>
+            <span className="badge bg-secondary">Java</span>
+            <span className="badge bg-secondary">MySQL</span>
+            <span className="badge bg-secondary">Firestore</span>
+          </div>
+        </div>
       </section>
 
       {/* PROJECTS */}
       <section
         id="projetos"
         className="container my-5 px-3 px-md-4"
-        style={{ paddingTop: '6rem' }}
+        style={{ paddingTop: '2rem' }}
       >
         <h2 className="fw-bold mb-4 text-start" style={{ color: '#6a1b9a' }}>
           My Projects
@@ -86,7 +117,7 @@ function HomeEN() {
             </div>
           </div>
 
-          {/* Batalha Naval */}
+          {/* Battleship */}
           <div className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
               <div className="card-body d-flex flex-column">
@@ -106,13 +137,13 @@ function HomeEN() {
             </div>
           </div>
 
-          {/* CIMOL LockerHub */}
+          {/* LockerHub */}
           <div className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title fw-bold">CIMOL LockerHub</h5>
                 <p className="card-text text-muted" style={{ flex: 1 }}>
-                  Locker management system for schools with rental, return and overdue tracking. Built with Node.js, MongoDB, JWT, and includes dashboard, CI/CD, and secure authentication.
+                  Locker management system for schools with rental, return, and overdue tracking. Built with Node.js, MongoDB, JWT, and includes dashboard, CI/CD, and secure authentication.
                 </p>
                 <a
                   href="https://github.com/eduarda-guimaraes/CIMOL-LockerHub"
@@ -132,7 +163,7 @@ function HomeEN() {
       <section
         id="contato"
         className="container my-5 px-3 px-md-4"
-        style={{ paddingTop: '6rem' }}
+        style={{ paddingTop: '1rem' }}
       >
         <h2 className="fw-bold mb-4 text-start" style={{ color: '#6a1b9a' }}>
           Contact

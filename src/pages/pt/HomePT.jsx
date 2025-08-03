@@ -19,10 +19,19 @@ function HomePT() {
               Eduarda Guimarães
             </h1>
             <p className="text-muted mb-4">
-              Sou desenvolvedora full-stack apaixonada por tecnologia, inteligência artificial e
-              desenvolvimento web. Estou sempre buscando criar soluções criativas e funcionais que impactam
-              positivamente as pessoas.
+              Sou estudante da <strong>Escola Técnica Estadual Monteiro Lobato</strong>, onde curso o <strong>técnico em Informática</strong>. 
+              Atuo como desenvolvedora full-stack com paixão por <strong>tecnologia</strong>, <strong>inteligência artificial</strong> e <strong>desenvolvimento web</strong>.
+
+              <br /><br />
+
+              Tenho experiência prática com diversas tecnologias, incluindo <strong>React</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>Firebase</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>, <strong>Python</strong>, <strong>C</strong>, <strong>C#</strong> e <strong>Java</strong>. 
+              Também gosto muito da área de <strong>bancos de dados</strong>, tanto SQL (como MySQL) quanto NoSQL (como Firestore), com foco em modelagem e integração.
+
+              <br /><br />
+
+              Estou sempre buscando aprender algo novo, resolver desafios com criatividade e colaborar em projetos que causem impacto positivo na vida das pessoas.
             </p>
+
             <div className="d-flex flex-wrap gap-3">
               <a
                 href="mailto:eduardaguima2007@yahoo.com"
@@ -55,6 +64,28 @@ function HomePT() {
             />
           </div>
         </div>
+        {/* TECNOLOGIAS */}
+        <div className="mt-4">
+          <h5 className="fw-bold mb-3" style={{ color: '#6a1b9a' }}>
+            Tecnologias que utilizo:
+          </h5>
+          <div className="d-flex flex-wrap gap-2">
+            <span className="badge bg-secondary">HTML</span>
+            <span className="badge bg-secondary">CSS</span>
+            <span className="badge bg-secondary">JavaScript</span>
+            <span className="badge bg-secondary">React</span>
+            <span className="badge bg-secondary">Node.js</span>
+            <span className="badge bg-secondary">Firebase</span>
+            <span className="badge bg-secondary">Bootstrap</span>
+            <span className="badge bg-secondary">Python</span>
+            <span className="badge bg-secondary">C</span>
+            <span className="badge bg-secondary">C#</span>
+            <span className="badge bg-secondary">Java</span>
+            <span className="badge bg-secondary">MySQL</span>
+            <span className="badge bg-secondary">Firestore</span>
+          </div>
+        </div>
+
       </section>
 
       {/* PROJETOS */}
