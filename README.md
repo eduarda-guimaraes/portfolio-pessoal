@@ -1,12 +1,57 @@
-# React + Vite
+# 🌐 Personal Portfolio - Eduarda Guimarães
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 🇬🇧 English | 🇧🇷 Português abaixo
 
-Currently, two official plugins are available:
+This is my personal portfolio, developed to showcase my projects, skills, and journey as a full-stack developer. The site is bilingual (Portuguese and English) and responsive across multiple devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖼️ Live Demo
 
-## Expanding the ESLint configuration
+> 🔗 [Visit the website](https://your-link-here.vercel.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- 🌍 Multilanguage support (Portuguese and English)
+- 📱 Responsive layout
+- 🧠 "About Me" section with a short biography
+- 💻 List of technologies I work with
+- 📁 Projects section with links to GitHub repositories
+
+## 🛠️ Technologies Used
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+---
+
+# 🌐 Portfólio Pessoal - Eduarda Guimarães
+
+> 🇧🇷 Português | 🇬🇧 English above
+
+Este é o meu portfólio pessoal, desenvolvido com foco em apresentar meus projetos, minhas habilidades e minha trajetória como desenvolvedora full-stack. O site é bilíngue (Português e Inglês) e responsivo para diversos dispositivos.
+
+## 🖼️ Demonstração
+
+> 🔗 [Acesse o site](https://your-link-here.vercel.app)
+
+## ✨ Funcionalidades
+
+- 🌍 Suporte a múltiplos idiomas (Português e Inglês)
+- 📱 Layout responsivo
+- 🧠 Sessão "Sobre Mim" com breve biografia
+- 💻 Lista de tecnologias que domino
+- 📁 Sessão de projetos com links para os repositórios do GitHub
+
+## 🛠️ Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
