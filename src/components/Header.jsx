@@ -1,16 +1,21 @@
-import React from "react";
-import './Header.css';
+import React from 'react';
+import TrocarIdioma from './TrocarIdioma';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Header() {
+function Header({ idioma, setIdioma }) {
   return (
-    <header className="header">
-      <h1 className="logo">Eduarda Guimarães</h1>
-      <nav className="nav">
-        <a href="#sobre">Sobre</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-      </nav>
+    <header
+      className="container-fluid bg-white shadow-sm border-bottom position-fixed top-0 start-0 end-0 z-3"
+      style={{ padding: '1rem 2rem' }}
+    >
+      <div className="d-flex justify-content-between align-items-center">
+        <h1 className="fs-4 m-0">
+          {idioma === 'pt'
+            ? 'Portfólio de Eduarda Guimarães'
+            : "Eduarda Guimarães' Portfolio"}
+        </h1>
+        <TrocarIdioma idioma={idioma} setIdioma={setIdioma} />
+      </div>
     </header>
   );
 }
