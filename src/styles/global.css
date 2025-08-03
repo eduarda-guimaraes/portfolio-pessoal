@@ -1,13 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
+
+html {
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth; 
+}
+
 
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f8f9fa;
   color: #333;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+h2{
+  color: #b39ddb;
 }
 
 main.container {
@@ -27,7 +47,7 @@ main.container {
 }
 
 .nav-link:hover {
-  color: #6a1b9a; /* Lilás suave */
+  color: #6a1b9a; 
 }
 
 .nav-link::after {
@@ -37,7 +57,7 @@ main.container {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #b39ddb; /* Lilás claro */
+  background-color: #b39ddb; 
   transition: width 0.3s ease;
 }
 
@@ -62,6 +82,21 @@ main.container {
   transform: scale(1.05);
 }
 
+.btn-roxo-outline {
+  border: 2px solid #6a1b9a;
+  color: #6a1b9a;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.btn-roxo-outline:hover {
+  background-color: #6a1b9a;
+  color: #fff;
+}
+
+.text-roxo-ativo {
+  color: #6a1b9a !important;
+}
 
 footer {
   text-align: center;

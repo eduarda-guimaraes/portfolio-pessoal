@@ -2,7 +2,12 @@ import React from 'react';
 import TrocarIdioma from './TrocarIdioma';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Header({ idioma, setIdioma }) {
+function Header({ idioma, setIdioma, secaoAtiva }) {
+  const linkClass = (id) =>
+    `nav-link fw-semibold ${
+      secaoAtiva === id ? 'text-roxo-ativo' : 'text-dark'
+    }`;
+
   return (
     <header
       className="container-fluid bg-white shadow-sm border-bottom position-fixed top-0 start-0 end-0 z-3"
@@ -19,13 +24,13 @@ function Header({ idioma, setIdioma }) {
         {/* Navegação + idioma à direita */}
         <div className="d-flex align-items-center gap-3">
           <nav className="d-flex gap-3">
-            <a className="nav-link text-dark fw-semibold" href="#sobre">
+            <a className={linkClass('sobre')} href="#sobre">
               {idioma === 'pt' ? 'Sobre Mim' : 'About Me'}
             </a>
-            <a className="nav-link text-dark fw-semibold" href="#projetos">
+            <a className={linkClass('projetos')} href="#projetos">
               {idioma === 'pt' ? 'Projetos' : 'Projects'}
             </a>
-            <a className="nav-link text-dark fw-semibold" href="#contato">
+            <a className={linkClass('contato')} href="#contato">
               {idioma === 'pt' ? 'Contato' : 'Contact'}
             </a>
           </nav>
