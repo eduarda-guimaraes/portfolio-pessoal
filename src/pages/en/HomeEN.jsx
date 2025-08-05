@@ -187,7 +187,7 @@ function HomeEN() {
             style={{ backgroundColor: '#f9f9f9' }}
           >
             <i className="bi bi-linkedin fs-4" style={{ color: '#0a66c2' }}></i>
-            <span>linkedin.com/in/eduarda-guimarães</span>
+            <span>linkedin.com/in/eduarda-guimarães-75a8462b1</span>
           </a>
 
           <a
