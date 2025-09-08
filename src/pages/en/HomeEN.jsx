@@ -32,7 +32,7 @@ function HomeEN() {
 
             <div className="d-flex flex-wrap gap-3">
               <a
-                href="mailto:eduardaguima2007@yahoo.com"
+                href="mailto:aeduardaguimaraes@gmail.com"
                 className="btn rounded-pill px-4 text-white"
                 style={{
                   backgroundColor: '#6a1b9a',
@@ -137,25 +137,25 @@ function HomeEN() {
             </div>
           </div>
 
-          {/* LockerHub */}
           <div className="col-12 col-md-6 col-lg-4 mb-4">
-            <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title fw-bold">CIMOL LockerHub</h5>
-                <p className="card-text text-muted" style={{ flex: 1 }}>
-                  Locker management system for schools with rental, return, and overdue tracking. Built with Node.js, MongoDB, JWT, and includes dashboard, CI/CD, and secure authentication.
-                </p>
-                <a
-                  href="https://github.com/eduarda-guimaraes/CIMOL-LockerHub"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-roxo-outline mt-auto rounded-pill"
-                >
-                  View Project
-                </a>
-              </div>
-            </div>
-          </div>
+  <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
+    <div className="card-body d-flex flex-column">
+      <h5 className="card-title fw-bold">OOP Game in C#</h5>
+      <p className="card-text text-muted" style={{ flex: 1 }}>
+        This project demonstrates the main concepts of Object-Oriented Programming (OOP) in C# through a turn-based battle game in the terminal.
+      </p>
+      <a
+        href="https://github.com/eduarda-guimaraes/POO-CSharp"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-roxo-outline mt-auto rounded-pill"
+      >
+        View Project
+      </a>
+    </div>
+  </div>
+</div>
+
         </div>
       </section>
 
@@ -171,12 +171,12 @@ function HomeEN() {
 
         <div className="d-flex flex-column gap-3">
           <a
-            href="mailto:eduardaguima2007@yahoo.com"
+            href="mailto:aeduardaguimaraes@gmail.com"
             className="d-flex align-items-center gap-3 p-3 border rounded shadow-sm text-decoration-none text-dark"
             style={{ backgroundColor: '#f9f9f9' }}
           >
             <i className="bi bi-envelope-fill fs-4" style={{ color: '#b39ddb' }}></i>
-            <span>eduardaguima2007@yahoo.com</span>
+            <span>aeduardaguimaraes@gmail.com</span>
           </a>
 
           <a

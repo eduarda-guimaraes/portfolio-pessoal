@@ -1,5 +1,6 @@
 import React from 'react';
 import minhaFoto from '../../assets/minha-foto.jpg';
+import cv from '../../assets/curriculo-virtual.pdf'; 
 
 function HomePT() {
   return (
@@ -34,7 +35,7 @@ function HomePT() {
 
             <div className="d-flex flex-wrap gap-3">
               <a
-                href="mailto:eduardaguima2007@yahoo.com"
+                href="mailto:aeduardaguimaraes@gmail.com"
                 className="btn rounded-pill px-4 text-white"
                 style={{
                   backgroundColor: '#6a1b9a',
@@ -45,11 +46,13 @@ function HomePT() {
                 Fale comigo
               </a>
               <a
-                href="/cv.pdf"
+                href={cv} 
                 className="btn btn-outline-secondary rounded-pill px-4"
                 target="_blank"
                 rel="noopener noreferrer"
+                download="Eduarda-Guimaraes-CV.pdf"
               >
+                <i className="bi bi-download me-2" aria-hidden="true"></i>
                 Baixar CV
               </a>
             </div>
@@ -121,7 +124,7 @@ function HomePT() {
           <div className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
               <div className="card-body d-flex flex-column">
-                <h5 className="card-title fw-bold">Batalha Naval em java</h5>
+                <h5 className="card-title fw-bold">Batalha Naval em Java</h5>
                 <p className="card-text text-muted" style={{ flex: 1 }}>
                     Versão em Java do clássico jogo Batalha Naval. Permite jogar contra outro jogador ou contra o computador, com alocação automática ou manual de navios em um tabuleiro 10x10.
                 </p>
@@ -140,12 +143,12 @@ function HomePT() {
           <div className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
               <div className="card-body d-flex flex-column">
-                <h5 className="card-title fw-bold">CIMOL LockerHub</h5>
+                <h5 className="card-title fw-bold">Jogo de POO em C#</h5>
                 <p className="card-text text-muted" style={{ flex: 1 }}>
-                    Sistema de gestão de armários escolares com controle de locações, devoluções e atrasos. Desenvolvido com Node.js, MongoDB e JWT, inclui dashboard, CI/CD, e autenticação segura.
+                    Este projeto demonstra os principais conceitos de Programação Orientada a Objetos (POO) em C# através de um mini jogo de batalha por turnos no terminal.
                 </p>
                 <a
-                  href="#"
+                  href="https://github.com/eduarda-guimaraes/POO-CSharp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-roxo-outline mt-auto rounded-pill"
@@ -170,12 +173,12 @@ function HomePT() {
 
         <div className="d-flex flex-column gap-3">
           <a
-            href="mailto:eduardaguima2007@yahoo.com"
+            href="mailto:aeduardaguimaraes@gmail.com"
             className="d-flex align-items-center gap-3 p-3 border rounded shadow-sm text-decoration-none text-dark"
             style={{ backgroundColor: '#f9f9f9' }}
           >
             <i className="bi bi-envelope-fill fs-4" style={{ color: '#b39ddb' }}></i>
-            <span>eduardaguima2007@yahoo.com</span>
+            <span>aeduardaguimaraes@gmail.com</span>
           </a>
 
           <a
