@@ -14,7 +14,6 @@ html {
   scroll-behavior: smooth; 
 }
 
-
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f8f9fa;
@@ -24,7 +23,6 @@ body {
 html, body {
   overflow-x: hidden;
 }
-
 
 h2{
   color: #b39ddb;
@@ -65,7 +63,6 @@ main.container {
   width: 100%;
 }
 
-/* Botão de idioma */
 .btn-idioma {
   background-color: #b39ddb;
   color: white;
@@ -86,7 +83,6 @@ main.container {
   border: 2px solid #6a1b9a;
   color: #6a1b9a;
   transition: all 0.3s ease;
-  background-color: transparent;
 }
 
 .btn-roxo-outline:hover {
@@ -96,6 +92,26 @@ main.container {
 
 .text-roxo-ativo {
   color: #6a1b9a !important;
+}
+
+.btn-outline-github {
+  color: #010409;
+  border-color: #010409;
+}
+
+.btn-outline-github:hover {
+  color: #ffffff; 
+  background-color: #010409;
+  border-color: #010409;
+}
+
+.contact-link-card, .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-link-card:hover, .card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--bs-box-shadow-lg) !important;
 }
 
 section[id] {

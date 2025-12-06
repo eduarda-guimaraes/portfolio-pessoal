@@ -25,7 +25,7 @@ function HomePT() {
 
               <br /><br />
 
-              Tenho experiência prática com diversas tecnologias, incluindo <strong>React</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>Firebase</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>, <strong>Python</strong>, <strong>C</strong>, <strong>C#</strong> e <strong>Java</strong>. 
+              Tenho experiência prática com diversas tecnologias e ferramentas, incluindo <strong>React</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>Firebase</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>, <strong>Python</strong>, <strong>C</strong> e <strong>Java</strong>. 
               Também gosto muito da área de <strong>bancos de dados</strong>, tanto SQL (como MySQL) quanto NoSQL (como Firestore), com foco em modelagem e integração.
 
               <br /><br />
@@ -50,7 +50,7 @@ function HomePT() {
                 className="btn btn-outline-secondary rounded-pill px-4"
                 target="_blank"
                 rel="noopener noreferrer"
-                download="Eduarda-Guimaraes-CV.pdf"
+                download="Eduarda-Guimarães-CV.pdf"
               >
                 <i className="bi bi-download me-2" aria-hidden="true"></i>
                 Baixar CV
@@ -107,16 +107,26 @@ function HomePT() {
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title fw-bold">Vocational Test</h5>
                 <p className="card-text text-muted" style={{ flex: 1 }}>
-                  Plataforma de teste vocacional com IA, desenvolvida como TCC no curso técnico. Utiliza React, Firebase e OpenAI.
+                  Plataforma de teste vocacional com Inteligência Artifical, desenvolvida como TCC no Curso Técnico de Informática. Utiliza React, Python, Firebase e OpenAI.
                 </p>
-                <a
-                  href="https://vocationaltest.com.br"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-roxo-outline mt-auto rounded-pill"
-                >
-                  Ver Projeto
-                </a>
+                <div className="d-flex gap-2 mt-auto justify-content-between">
+                  <a
+                    href="https://www.vocationaltest.com.br"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-roxo-outline rounded-pill flex-fill"
+                  >
+                    Acessar Site
+                  </a>
+                  <a 
+                    href="https://github.com/eduarda-guimaraes/Vocational-Test"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-github rounded-pill px-4 flex-fill"
+                  >
+                    Ver repositório
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -132,10 +142,39 @@ function HomePT() {
                   href="https://github.com/eduarda-guimaraes/Batalha-Naval"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-roxo-outline mt-auto rounded-pill"
+                  className="btn btn-outline-github rounded-pill px-4"
                 >
-                  Ver Projeto
+                  Ver repositório
                 </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 col-md-6 col-lg-4 mb-4">
+            <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
+              <div className="card-body d-flex flex-column">
+                <h5 className="card-title fw-bold">Patinhas & Cia</h5>
+                <p className="card-text text-muted" style={{ flex: 1 }}>
+                  Projeto de Gerenciamento de Pet Shop com e-commerce. Construído usando HTML, CSS e JavaScript, com ênfase na responsividade e persistência de dados (clientes e carrinho) via localStorage.
+                </p>
+                <div className="d-flex gap-2 mt-auto justify-content-between">
+                  <a
+                    href="https://eduarda-guimaraes.github.io/Teach3035-PetShop/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-roxo-outline rounded-pill flex-fill"
+                  >
+                    Acessar Site
+                  </a>
+                  <a 
+                    href="https://github.com/eduarda-guimaraes/Teach3035-PetShop"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-github rounded-pill px-4 flex-fill"
+                  >
+                    Ver repositório
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -151,15 +190,16 @@ function HomePT() {
                   href="https://github.com/eduarda-guimaraes/POO-CSharp"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-roxo-outline mt-auto rounded-pill"
+                  className="btn btn-outline-github rounded-pill px-4"
                 >
-                  Ver Projeto
+                  Ver repositório
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+      
 
       {/* CONTATO */}
       <section
@@ -174,7 +214,7 @@ function HomePT() {
         <div className="d-flex flex-column gap-3">
           <a
             href="mailto:aeduardaguimaraes@gmail.com"
-            className="d-flex align-items-center gap-3 p-3 border rounded shadow-sm text-decoration-none text-dark"
+            className="d-flex align-items-center gap-3 p-3 border rounded shadow-sm text-decoration-none text-dark contact-link-card" // <-- CLASSE ADICIONADA
             style={{ backgroundColor: '#f9f9f9' }}
           >
             <i className="bi bi-envelope-fill fs-4" style={{ color: '#b39ddb' }}></i>
@@ -185,7 +225,7 @@ function HomePT() {
             href="https://www.linkedin.com/in/eduarda-guimarães-75a8462b1"
             target="_blank"
             rel="noopener noreferrer"
-            className="d-flex align-items-center gap-3 p-3 border rounded shadow-sm text-decoration-none text-dark"
+            className="d-flex align-items-center gap-3 p-3 border rounded shadow-sm text-decoration-none text-dark contact-link-card" // <-- CLASSE ADICIONADA
             style={{ backgroundColor: '#f9f9f9' }}
           >
             <i className="bi bi-linkedin fs-4" style={{ color: '#0a66c2' }}></i>
@@ -196,7 +236,7 @@ function HomePT() {
             href="https://github.com/eduarda-guimaraes"
             target="_blank"
             rel="noopener noreferrer"
-            className="d-flex align-items-center gap-3 p-3 border rounded shadow-sm text-decoration-none text-dark"
+            className="d-flex align-items-center gap-3 p-3 border rounded shadow-sm text-decoration-none text-dark contact-link-card" // <-- CLASSE ADICIONADA
             style={{ backgroundColor: '#f9f9f9' }}
           >
             <i className="bi bi-github fs-4" style={{ color: '#333' }}></i>
