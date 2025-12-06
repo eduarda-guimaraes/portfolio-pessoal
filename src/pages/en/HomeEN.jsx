@@ -75,7 +75,7 @@ function HomeEN() {
                 className="btn btn-outline-secondary rounded-pill px-4"
                 target="_blank"
                 rel="noopener noreferrer"
-                download="Eduarda-Guimarães-VR.pdf"
+                download="Eduarda Guimarães - Virtual Resume.pdf"
               >
                 <i className="bi bi-download me-2" aria-hidden="true"></i>
                 Download VR 

@@ -11,21 +11,49 @@
 
 html {
   scroll-padding-top: 6rem;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f8f9fa;
-  color: #333;
+  color: var(--text);
 }
 
 html, body {
   overflow-x: hidden;
 }
 
+:root{
+  --accent: #6a1b9a;        
+  --accent-weak: #b39ddb;
+  --text: #333;
+  --text-weak: #6b7280;
+
+  --card-bg: rgba(189, 189, 189, 0.85);
+  --card-border: rgba(0,0,0,0.06);
+
+  --shadow-sm: 0 6px 20px rgba(0,0,0,0.08);
+  --shadow-md: 0 16px 40px rgba(0,0,0,0.12);
+
+  --radius-xl: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --text: #000000;
+    --text-weak: #6a1b9a;
+
+    --card-bg: rgba(20,24,33,0.75);
+    --card-border: rgba(255,255,255,0.09);
+
+    --shadow-sm: 0 6px 18px rgba(0,0,0,0.45);
+    --shadow-md: 0 18px 48px rgba(0,0,0,0.6);
+  }
+}
+
 h2{
-  color: #b39ddb;
+  color: var(--accent-weak);
 }
 
 main.container {
@@ -39,13 +67,13 @@ main.container {
 .nav-link {
   position: relative;
   text-decoration: none;
-  color: #333;
+  color: var(--text);
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #6a1b9a; 
+  color: var(--accent);
 }
 
 .nav-link::after {
@@ -55,7 +83,7 @@ main.container {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #b39ddb; 
+  background-color: var(--accent-weak);
   transition: width 0.3s ease;
 }
 
@@ -64,7 +92,7 @@ main.container {
 }
 
 .btn-idioma {
-  background-color: #b39ddb;
+  background-color: var(--accent-weak);
   color: white;
   border: none;
   border-radius: 20px;
@@ -79,45 +107,112 @@ main.container {
   transform: scale(1.05);
 }
 
+
 .btn-roxo-outline {
-  border: 2px solid #6a1b9a;
-  color: #6a1b9a;
-  transition: all 0.3s ease;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-weight: 600;
+  transition: background-color .25s ease, color .25s ease,
+              box-shadow .25s ease, transform .15s ease;
 }
 
 .btn-roxo-outline:hover {
-  background-color: #6a1b9a;
+  background: var(--accent);
   color: #fff;
-}
-
-.text-roxo-ativo {
-  color: #6a1b9a !important;
+  box-shadow: 0 10px 24px rgba(106,27,154,0.22);
+  transform: translateY(-1px);
 }
 
 .btn-outline-github {
-  color: #010409;
-  border-color: #010409;
+  color: #0d1117;
+  border: 2px solid #0d1117;
+  background: transparent;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-weight: 600;
+  transition: background-color .25s ease, color .25s ease,
+              box-shadow .25s ease, transform .15s ease;
 }
 
 .btn-outline-github:hover {
-  color: #ffffff; 
-  background-color: #010409;
-  border-color: #010409;
+  color: #fff;
+  background: #0d1117;
+  box-shadow: 0 10px 24px rgba(13,17,23,0.22);
+  transform: translateY(-1px);
+}
+
+@media (prefers-color-scheme: dark){
+  .btn-outline-github{
+    color: #acaeb0;
+    border-color: #acaeb0;
+  }
+  .btn-outline-github:hover{
+    background: #e7e9ee;
+    color: #0d1117;
+  }
 }
 
 .contact-link-card, .card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.contact-link-card:hover, .card:hover {
+#projetos .card{
+  background: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid rgba(0,0,0,0.07);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+#projetos .card:hover,
+#projetos .card:focus-within{
   transform: translateY(-4px);
-  box-shadow: var(--bs-box-shadow-lg) !important;
+  box-shadow: 0 14px 32px rgba(0,0,0,0.10);
+}
+
+#projetos .card-title{
+  color: #222;
+}
+
+#projetos .card-text{
+  color: #555;
+}
+
+#projetos .card:hover,
+#projetos .card:focus-within{
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: var(--shadow-md);
+  border-color: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+#projetos .card-title{
+  color: var(--text);
+  letter-spacing: .2px;
+}
+
+#projetos .card-text{
+  color: var(--text-weak);
+  line-height: 1.6;
+}
+
+#projetos .card a:focus-visible{
+  outline: 3px solid color-mix(in srgb, var(--accent-weak) 70%, transparent);
+  outline-offset: 2px;
+  border-radius: 999px;
+}
+
+.contact-link-card:hover, .card:hover,
+.card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md) !important;
 }
 
 section[id] {
   scroll-margin-top: 6rem;
 }
-
 
 footer {
   text-align: center;
@@ -125,4 +220,12 @@ footer {
   font-size: 0.9rem;
   background-color: #f1f1f1;
   color: #666;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .contact-link-card, .card,
+  .btn-outline-github, .btn-roxo-outline,
+  .nav-link{
+    transition: none !important;
+  }
 }

@@ -50,7 +50,7 @@ function HomePT() {
                 className="btn btn-outline-secondary rounded-pill px-4"
                 target="_blank"
                 rel="noopener noreferrer"
-                download="Eduarda-Guimarães-CV.pdf"
+                download="Eduarda Guimarães - Currículo Virtual.pdf"
               >
                 <i className="bi bi-download me-2" aria-hidden="true"></i>
                 Baixar CV
@@ -67,6 +67,7 @@ function HomePT() {
             />
           </div>
         </div>
+
         {/* TECNOLOGIAS */}
         <div className="mt-4">
           <h5 className="fw-bold mb-3" style={{ color: '#6a1b9a' }}>
@@ -92,113 +93,114 @@ function HomePT() {
       </section>
 
       {/* PROJETOS */}
-      <section
-        id="projetos"
-        className="container my-5 px-3 px-md-4"
-        style={{ paddingTop: '6rem'}}
-      >
-        <h2 className="fw-bold mb-4 text-start" style={{ color: '#6a1b9a' }}>
-          Meus Projetos
-        </h2>
+<section
+  id="projetos"
+  className="container my-5 px-3 px-md-4"
+  style={{ paddingTop: '6rem'}}
+>
+  <h2 className="fw-bold mb-4 text-start" style={{ color: '#6a1b9a' }}>
+    Meus Projetos
+  </h2>
 
-        <div className="row">
-          <div className="col-12 col-md-6 col-lg-4 mb-4">
-            <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title fw-bold">Vocational Test</h5>
-                <p className="card-text text-muted" style={{ flex: 1 }}>
-                  Plataforma de teste vocacional com Inteligência Artifical, desenvolvida como TCC no Curso Técnico de Informática. Utiliza React, Python, Firebase e OpenAI.
-                </p>
-                <div className="d-flex gap-2 mt-auto justify-content-between">
-                  <a
-                    href="https://www.vocationaltest.com.br"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-roxo-outline rounded-pill flex-fill"
-                  >
-                    Acessar Site
-                  </a>
-                  <a 
-                    href="https://github.com/eduarda-guimaraes/Vocational-Test"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline-github rounded-pill px-4 flex-fill"
-                  >
-                    Ver repositório
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-md-6 col-lg-4 mb-4">
-            <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title fw-bold">Batalha Naval em Java</h5>
-                <p className="card-text text-muted" style={{ flex: 1 }}>
-                    Versão em Java do clássico jogo Batalha Naval. Permite jogar contra outro jogador ou contra o computador, com alocação automática ou manual de navios em um tabuleiro 10x10.
-                </p>
-                <a
-                  href="https://github.com/eduarda-guimaraes/Batalha-Naval"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-github rounded-pill px-4"
-                >
-                  Ver repositório
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-md-6 col-lg-4 mb-4">
-            <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title fw-bold">Patinhas & Cia</h5>
-                <p className="card-text text-muted" style={{ flex: 1 }}>
-                  Projeto de Gerenciamento de Pet Shop com e-commerce. Construído usando HTML, CSS e JavaScript, com ênfase na responsividade e persistência de dados (clientes e carrinho) via localStorage.
-                </p>
-                <div className="d-flex gap-2 mt-auto justify-content-between">
-                  <a
-                    href="https://eduarda-guimaraes.github.io/Teach3035-PetShop/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-roxo-outline rounded-pill flex-fill"
-                  >
-                    Acessar Site
-                  </a>
-                  <a 
-                    href="https://github.com/eduarda-guimaraes/Teach3035-PetShop"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline-github rounded-pill px-4 flex-fill"
-                  >
-                    Ver repositório
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-md-6 col-lg-4 mb-4">
-            <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title fw-bold">Jogo de POO em C#</h5>
-                <p className="card-text text-muted" style={{ flex: 1 }}>
-                    Este projeto demonstra os principais conceitos de Programação Orientada a Objetos (POO) em C# através de um mini jogo de batalha por turnos no terminal.
-                </p>
-                <a
-                  href="https://github.com/eduarda-guimaraes/POO-CSharp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-github rounded-pill px-4"
-                >
-                  Ver repositório
-                </a>
-              </div>
-            </div>
+  <div className="row">
+    <div className="col-12 col-md-6 col-lg-4 mb-4">
+      <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
+        <div className="card-body d-flex flex-column">
+          <h5 className="card-title fw-bold">Vocational Test</h5>
+          <p className="card-text text-muted" style={{ flex: 1 }}>
+            Plataforma de teste vocacional com Inteligência Artificial, desenvolvida como TCC no Curso Técnico de Informática. Utiliza React, Python, Firebase e OpenAI.
+          </p>
+          <div className="d-flex gap-2 mt-auto justify-content-between">
+            <a
+              href="https://www.vocationaltest.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-roxo-outline rounded-pill flex-fill"
+            >
+              Acessar Site
+            </a>
+            <a 
+              href="https://github.com/eduarda-guimaraes/Vocational-Test"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-github rounded-pill px-4 flex-fill"
+            >
+              Ver repositório
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+
+    <div className="col-12 col-md-6 col-lg-4 mb-4">
+      <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
+        <div className="card-body d-flex flex-column">
+          <h5 className="card-title fw-bold">Batalha Naval em Java</h5>
+          <p className="card-text text-muted" style={{ flex: 1 }}>
+            Versão em Java do clássico jogo Batalha Naval. Permite jogar contra outro jogador ou contra o computador, com alocação automática ou manual de navios em um tabuleiro 10x10.
+          </p>
+          <a
+            href="https://github.com/eduarda-guimaraes/Batalha-Naval"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline-github rounded-pill px-4"
+          >
+            Ver repositório
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-12 col-md-6 col-lg-4 mb-4">
+      <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
+        <div className="card-body d-flex flex-column">
+          <h5 className="card-title fw-bold">Patinhas & Cia</h5>
+          <p className="card-text text-muted" style={{ flex: 1 }}>
+            Projeto de Gerenciamento de Pet Shop com e-commerce. Construído usando HTML, CSS e JavaScript, com ênfase na responsividade e persistência de dados (clientes e carrinho) via localStorage.
+          </p>
+          <div className="d-flex gap-2 mt-auto justify-content-between">
+            <a
+              href="https://eduarda-guimaraes.github.io/Teach3035-PetShop/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-roxo-outline rounded-pill flex-fill"
+            >
+              Acessar Site
+            </a>
+            <a 
+              href="https://github.com/eduarda-guimaraes/Teach3035-PetShop"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-github rounded-pill px-4 flex-fill"
+            >
+              Ver repositório
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-12 col-md-6 col-lg-4 mb-4">
+      <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
+        <div className="card-body d-flex flex-column">
+          <h5 className="card-title fw-bold">Jogo de POO em C#</h5>
+          <p className="card-text text-muted" style={{ flex: 1 }}>
+            Este projeto demonstra os principais conceitos de Programação Orientada a Objetos (POO) em C# através de um mini jogo de batalha por turnos no terminal.
+          </p>
+          <a
+            href="https://github.com/eduarda-guimaraes/POO-CSharp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline-github rounded-pill px-4"
+          >
+            Ver repositório
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       
 
       {/* CONTATO */}
