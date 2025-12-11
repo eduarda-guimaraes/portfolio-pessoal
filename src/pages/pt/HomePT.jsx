@@ -68,25 +68,95 @@ function HomePT() {
           </div>
         </div>
 
+        {/* IDIOMAS */}
+        <div className="mt-5 pt-4 border-top">
+          <h5 className="fw-bold mb-4" style={{ color: '#6a1b9a' }}>
+            Idiomas:
+          </h5>
+          <div className="row gy-3">
+            <div className="col-12 col-sm-6">
+              <div className="d-flex align-items-center gap-3">
+                <i className="bi bi-globe2" style={{ fontSize: '2rem', color: '#6a1b9a' }}></i>
+                <div>
+                  <p className="fw-bold mb-1">Português</p>
+                  <p className="text-muted mb-0">Nativo</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-sm-6">
+              <div className="d-flex align-items-center gap-3">
+                <i className="bi bi-globe" style={{ fontSize: '2rem', color: '#6a1b9a' }}></i>
+                <div>
+                  <p className="fw-bold mb-1">Inglês</p>
+                  <p className="text-muted mb-0">Avançado</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* TECNOLOGIAS */}
-        <div className="mt-4">
-          <h5 className="fw-bold mb-3" style={{ color: '#6a1b9a' }}>
+        <div className="mt-5 pt-4 border-top">
+          <h5 className="fw-bold mb-4" style={{ color: '#6a1b9a' }}>
             Tecnologias que utilizo:
           </h5>
-          <div className="d-flex flex-wrap gap-2">
-            <span className="badge bg-secondary">HTML</span>
-            <span className="badge bg-secondary">CSS</span>
-            <span className="badge bg-secondary">JavaScript</span>
-            <span className="badge bg-secondary">React</span>
-            <span className="badge bg-secondary">Node.js</span>
-            <span className="badge bg-secondary">Firebase</span>
-            <span className="badge bg-secondary">Bootstrap</span>
-            <span className="badge bg-secondary">Python</span>
-            <span className="badge bg-secondary">C</span>
-            <span className="badge bg-secondary">C#</span>
-            <span className="badge bg-secondary">Java</span>
-            <span className="badge bg-secondary">MySQL</span>
-            <span className="badge bg-secondary">Firestore</span>
+          <div className="d-flex flex-wrap gap-3">
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-filetype-html"></i>
+              <span>HTML</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-filetype-css"></i>
+              <span>CSS</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-filetype-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-filetype-tsx"></i>
+              <span>TypeScript</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-react"></i>
+              <span>React</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-node-plus"></i>
+              <span>Node.js</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-fire"></i>
+              <span>Firebase</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-bootstrap"></i>
+              <span>Bootstrap</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-filetype-py"></i>
+              <span>Python</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-code"></i>
+              <span>C</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-code-slash"></i>
+              <span>C#</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-cup-hot"></i>
+              <span>Java</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-database"></i>
+              <span>MySQL</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-database-fill"></i>
+              <span>Firestore</span>
+            </div>
           </div>
         </div>
 
@@ -200,6 +270,113 @@ function HomePT() {
     </div>
   </div>
 </section>
+
+      {/* PARTICIPAÇÕES */}
+      <section
+        id="participacoes"
+        className="container my-5 px-3 px-md-4"
+        style={{ paddingTop: '6rem' }}
+      >
+        <h2 className="fw-bold mb-4 text-start" style={{ color: '#6a1b9a' }}>
+          Participações
+        </h2>
+
+        <div className="row">
+          {/* Adicione aqui seus cards de participações */}
+          <div className="col-12 col-md-6 col-lg-4 mb-4">
+            <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
+              <div className="card-body d-flex flex-column">
+                <div className="mb-2">
+                  <span className="badge" style={{ backgroundColor: '#6a1b9a', color: '#fff' }}>
+                    Menção Honrosa
+                  </span>
+                </div>
+
+                <h5 className="card-title fw-bold">HackaTime Taquara 2025</h5>
+
+                <p className="card-text text-muted" style={{ flex: 1, fontSize: '0.9rem' }}>
+                  Hackathon realizado pela Sicredi Caminho das Águas, Faccat, Instituto Taquara Mais,
+                  Sebrae e Crisdu Labs. Reuniu jovens estudantes durante 48 horas para resolver desafios
+                  da comunidade com mentorias e apoio metodológico.
+                </p>
+
+                <small className="text-muted mb-3">
+                  <i className="bi bi-calendar-event me-2"></i>
+                  8 e 9 de agosto de 2025
+                </small>
+
+                {/* Botão Saiba Mais */}
+                <a
+                  href="https://www.sicredi.com.br/coop/caminhodasaguasrs/noticias/inovacao/hackatime-taquara-2025-reune-jovens-estudantes-para-encontrar-solucoes-inovadoras/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-roxo-outline rounded-pill mt-auto"
+                >
+                  Saiba Mais
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 col-md-6 col-lg-4 mb-4">
+            <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
+              <div className="card-body d-flex flex-column">
+
+                <h5 className="card-title fw-bold">Taquara Summit 2025</h5>
+
+                <p className="card-text text-muted" style={{ flex: 1, fontSize: '0.9rem' }}>
+                  O Taquara Summit 2025 acontece no dia 22 de agosto na Faccat, reunindo 16 sessões sobre inovação, liderança, empreendedorismo e futuro do trabalho, com palestrantes de destaque nacional.
+                </p>
+
+                <small className="text-muted mb-3">
+                  <i className="bi bi-calendar-event me-2"></i>
+                  22 de agosto de 2025
+                </small>
+
+                <a
+                  href="https://www.taquara.rs.gov.br/noticia/13890/13890?titulo=Grandes+nomes+estarão+no+Taquara+Summit+2025+falando+de+inovação%2C+empreendedorismo+e+networking"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-roxo-outline rounded-pill mt-auto"
+                >
+                  Saiba Mais
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 col-md-6 col-lg-4 mb-4">
+            <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
+              <div className="card-body d-flex flex-column">
+
+                <h5 className="card-title fw-bold">Oktober Summit 2025</h5>
+
+                <p className="card-text text-muted" style={{ flex: 1, fontSize: '0.9rem' }}>
+                  O Oktober Summit 2025 acontece no dia 3 de outubro no Alles Blau, reunindo líderes empresariais, startups, universidades e governo em um dos principais eventos de inovação e desenvolvimento do Vale do Paranhana.
+                </p>
+
+                <small className="text-muted mb-3">
+                  <i className="bi bi-calendar-event me-2"></i>
+                  3 de outubro de 2025
+                </small>
+
+                <a
+                  href="https://www.instagram.com/oktobersummit/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-roxo-outline rounded-pill mt-auto d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i className="bi bi-instagram" style={{ fontSize: '1.2rem' }}></i>
+                  Veja no Instagram
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
       
 

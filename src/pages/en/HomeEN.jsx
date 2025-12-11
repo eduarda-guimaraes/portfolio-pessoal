@@ -16,7 +16,7 @@ function HomeEN() {
       { threshold: 0.1 }
     );
 
-    const sections = document.querySelectorAll('#about, #projects, #contact');
+    const sections = document.querySelectorAll('#about, #projects, #participations, #contact');
     sections.forEach((section) => {
       observer.observe(section);
     });
@@ -32,7 +32,7 @@ function HomeEN() {
     <>
       {/* ABOUT ME */}
       <section
-        id="about" 
+        id="about"
         className="container my-5 px-3 px-md-4"
         style={{ paddingTop: '6rem' }}
       >
@@ -47,14 +47,10 @@ function HomeEN() {
             <p className="text-muted mb-4">
               I am a student at <strong>Escola Técnica Estadual Monteiro Lobato</strong>, where I am pursuing a <strong>Technical Degree in Computer Science</strong>.
               I am a full-stack developer with a passion for <strong>technology</strong>, <strong>artificial intelligence</strong>, and <strong>web development</strong>.
-
               <br /><br />
-
               I have hands-on experience with various technologies and tools, including <strong>React</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>Firebase</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>, <strong>Python</strong>, <strong>C</strong>, and <strong>Java</strong>.
               I am also very interested in <strong>databases</strong>, both SQL (like MySQL) and NoSQL (like Firestore), with a focus on modeling and integration.
-
               <br /><br />
-
               I am always looking to learn something new, solve challenges creatively, and collaborate on projects that positively impact people's lives.
             </p>
 
@@ -78,7 +74,7 @@ function HomeEN() {
                 download="Eduarda Guimarães - Virtual Resume.pdf"
               >
                 <i className="bi bi-download me-2" aria-hidden="true"></i>
-                Download VR 
+                Download VR
               </a>
             </div>
           </div>
@@ -86,38 +82,109 @@ function HomeEN() {
           <div className="col-12 col-lg-6 d-flex justify-content-center">
             <img
               src={minhaFoto}
-              alt="Photo of Eduarda Guimarães" 
+              alt="Photo of Eduarda Guimarães"
               className="rounded-circle shadow img-fluid"
               style={{ maxWidth: '250px', objectFit: 'cover' }}
             />
           </div>
         </div>
+
+        {/* LANGUAGES */}
+        <div className="mt-5 pt-4 border-top">
+          <h5 className="fw-bold mb-4" style={{ color: '#6a1b9a' }}>
+            Languages:
+          </h5>
+          <div className="row gy-3">
+            <div className="col-12 col-sm-6">
+              <div className="d-flex align-items-center gap-3">
+                <i className="bi bi-globe2" style={{ fontSize: '2rem', color: '#6a1b9a' }}></i>
+                <div>
+                  <p className="fw-bold mb-1">Portuguese</p>
+                  <p className="text-muted mb-0">Native</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-sm-6">
+              <div className="d-flex align-items-center gap-3">
+                <i className="bi bi-globe" style={{ fontSize: '2rem', color: '#6a1b9a' }}></i>
+                <div>
+                  <p className="fw-bold mb-1">English</p>
+                  <p className="text-muted mb-0">Advanced</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* TECHNOLOGIES */}
-        <div className="mt-4">
-          <h5 className="fw-bold mb-3" style={{ color: '#6a1b9a' }}>
+        <div className="mt-5 pt-4 border-top">
+          <h5 className="fw-bold mb-4" style={{ color: '#6a1b9a' }}>
             Technologies I use:
           </h5>
-          <div className="d-flex flex-wrap gap-2">
-            <span className="badge bg-secondary">HTML</span>
-            <span className="badge bg-secondary">CSS</span>
-            <span className="badge bg-secondary">JavaScript</span>
-            <span className="badge bg-secondary">React</span>
-            <span className="badge bg-secondary">Node.js</span>
-            <span className="badge bg-secondary">Firebase</span>
-            <span className="badge bg-secondary">Bootstrap</span>
-            <span className="badge bg-secondary">Python</span>
-            <span className="badge bg-secondary">C</span>
-            <span className="badge bg-secondary">C#</span> 
-            <span className="badge bg-secondary">Java</span>
-            <span className="badge bg-secondary">MySQL</span>
-            <span className="badge bg-secondary">Firestore</span>
+          <div className="d-flex flex-wrap gap-3">
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-filetype-html"></i>
+              <span>HTML</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-filetype-css"></i>
+              <span>CSS</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-filetype-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-filetype-tsx"></i>
+              <span>TypeScript</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-react"></i>
+              <span>React</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-node-plus"></i>
+              <span>Node.js</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-fire"></i>
+              <span>Firebase</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-bootstrap"></i>
+              <span>Bootstrap</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-filetype-py"></i>
+              <span>Python</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-code"></i>
+              <span>C</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-code-slash"></i>
+              <span>C#</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-cup-hot"></i>
+              <span>Java</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-database"></i>
+              <span>MySQL</span>
+            </div>
+            <div className="tech-badge d-flex align-items-center gap-2">
+              <i className="bi bi-database-fill"></i>
+              <span>Firestore</span>
+            </div>
           </div>
         </div>
       </section>
 
       {/* PROJECTS */}
       <section
-        id="projects" 
+        id="projects"
         className="container my-5 px-3 px-md-4"
         style={{ paddingTop: '6rem' }}
       >
@@ -217,6 +284,107 @@ function HomeEN() {
                   className="btn btn-outline-github rounded-pill px-4"
                 >
                   View Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PARTICIPATIONS */}
+      <section
+        id="participations"
+        className="container my-5 px-3 px-md-4"
+        style={{ paddingTop: '6rem' }}
+      >
+        <h2 className="fw-bold mb-4 text-start" style={{ color: '#6a1b9a' }}>
+          Participations
+        </h2>
+
+        <div className="row">
+          {/* HackaTime Taquara 2025 */}
+          <div className="col-12 col-md-6 col-lg-4 mb-4">
+            <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
+              <div className="card-body d-flex flex-column">
+                <div className="mb-2">
+                  <span className="badge" style={{ backgroundColor: '#6a1b9a', color: '#fff' }}>
+                    Honorable Mention
+                  </span>
+                </div>
+
+                <h5 className="card-title fw-bold">HackaTime Taquara 2025</h5>
+
+                <p className="card-text text-muted" style={{ flex: 1, fontSize: '0.9rem' }}>
+                  Hackathon organized by Sicredi Caminho das Águas, Faccat, Instituto Taquara Mais, Sebrae, and Crisdu Labs. 48 hours of collaboration, mentoring, and community-centered solutions.
+                </p>
+
+                <small className="text-muted mb-3">
+                  <i className="bi bi-calendar-event me-2"></i>
+                  August 8–9, 2025
+                </small>
+
+                <a
+                  href="https://www.sicredi.com.br/coop/caminhodasaguasrs/noticias/inovacao/hackatime-taquara-2025-reune-jovens-estudantes-para-encontrar-solucoes-inovadoras/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-roxo-outline rounded-pill mt-auto"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Taquara Summit 2025 */}
+          <div className="col-12 col-md-6 col-lg-4 mb-4">
+            <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
+              <div className="card-body d-flex flex-column">
+                <h5 className="card-title fw-bold">Taquara Summit 2025</h5>
+
+                <p className="card-text text-muted" style={{ flex: 1, fontSize: '0.9rem' }}>
+                  On August 22 at Faccat, the Taquara Summit brings 16 content sessions on innovation, leadership, entrepreneurship, and the future of work, with nationally recognized speakers.
+                </p>
+
+                <small className="text-muted mb-3">
+                  <i className="bi bi-calendar-event me-2"></i>
+                  August 22, 2025
+                </small>
+
+                <a
+                  href="https://www.taquara.rs.gov.br/noticia/13890/13890?titulo=Grandes+nomes+estar%C3%A3o+no+Taquara+Summit+2025+falando+de+inova%C3%A7%C3%A3o%2C+empreendedorismo+e+networking"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-roxo-outline rounded-pill mt-auto"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Oktober Summit 2025 */}
+          <div className="col-12 col-md-6 col-lg-4 mb-4">
+            <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
+              <div className="card-body d-flex flex-column">
+                <h5 className="card-title fw-bold">Oktober Summit 2025</h5>
+
+                <p className="card-text text-muted" style={{ flex: 1, fontSize: '0.9rem' }}>
+                  On October 3 at Alles Blau (Igrejinha), the Oktober Summit gathers business leaders, startups, universities, and government in one of Vale do Paranhana’s key innovation and development events.
+                </p>
+
+                <small className="text-muted mb-3">
+                  <i className="bi bi-calendar-event me-2"></i>
+                  October 3, 2025
+                </small>
+
+                <a
+                  href="https://www.instagram.com/oktobersummit/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-roxo-outline rounded-pill mt-auto d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i className="bi bi-instagram" style={{ fontSize: '1.2rem' }}></i>
+                  See on Instagram
                 </a>
               </div>
             </div>

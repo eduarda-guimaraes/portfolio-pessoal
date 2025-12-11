@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Header({ idioma, setIdioma, secaoAtiva }) {
   const secoes = {
-    pt: { sobre: 'sobre', projetos: 'projetos', contato: 'contato' },
-    en: { sobre: 'about', projetos: 'projects', contato: 'contact' }
+    pt: { sobre: 'sobre', projetos: 'projetos', participacoes: 'participacoes', contato: 'contato' },
+    en: { sobre: 'about', projetos: 'projects', participacoes: 'participations', contato: 'contact' }
   };
 
   const linkClass = (id) =>
@@ -19,6 +19,8 @@ function Header({ idioma, setIdioma, secaoAtiva }) {
         return idioma === 'pt' ? 'Sobre Mim' : 'About Me';
       case 'projetos':
         return idioma === 'pt' ? 'Projetos' : 'Projects';
+      case 'participacoes':
+        return idioma === 'pt' ? 'Participações' : 'Participations';
       case 'contato':
         return idioma === 'pt' ? 'Contato' : 'Contact';
       default:
@@ -54,6 +56,14 @@ function Header({ idioma, setIdioma, secaoAtiva }) {
               href={`#${secoes[idioma].projetos}`} 
             >
               {getLinkName('projetos')}
+            </a>
+            
+            {/* PARTICIPAÇÕES / PARTICIPATIONS */}
+            <a 
+              className={linkClass('participacoes')} 
+              href={`#${secoes[idioma].participacoes}`} 
+            >
+              {getLinkName('participacoes')}
             </a>
             
             {/* CONTATO / CONTACT */}
