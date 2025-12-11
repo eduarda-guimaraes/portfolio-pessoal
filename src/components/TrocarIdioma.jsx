@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/global.css';
 
-function TrocarIdioma({ idioma, setIdioma }) {
+function TrocarIdioma({ idioma, setIdioma, className = '' }) {
   const handleChange = () => {
     setIdioma(idioma === 'pt' ? 'en' : 'pt');
   };
@@ -9,11 +9,12 @@ function TrocarIdioma({ idioma, setIdioma }) {
   return (
     <button
       onClick={handleChange}
-      className="btn-idioma d-flex align-items-center gap-2"
+      className={`btn-idioma d-flex align-items-center gap-2 ${className}`}
       aria-label="Trocar idioma"
       title="Trocar idioma"
+      type="button"
     >
-       {idioma === 'pt' ? 'English' : 'Português'}
+      {idioma === 'pt' ? 'English' : 'Português'}
     </button>
   );
 }
