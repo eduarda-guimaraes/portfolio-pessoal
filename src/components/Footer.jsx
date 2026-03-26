@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-function Footer({ idioma }) {
+function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer
       className="text-center py-4 mt-5"
@@ -8,14 +11,10 @@ function Footer({ idioma }) {
         width: '100%',
         backgroundColor: '#f1f1f1',
         color: '#666',
-        fontSize: '0.9rem'
+        fontSize: '0.9rem',
       }}
     >
-      <p className="mb-0">
-        {idioma === 'pt'
-          ? '© 2025 Eduarda Guimarães. Todos os direitos reservados.'
-          : '© 2025 Eduarda Guimarães. All rights reserved.'}
-      </p>
+      <p className="mb-0">{t('footer.rights')}</p>
     </footer>
   );
 }

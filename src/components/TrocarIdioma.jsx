@@ -1,20 +1,23 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/global.css';
 
-function TrocarIdioma({ idioma, setIdioma, className = '' }) {
+function TrocarIdioma({ className = '' }) {
+  const { i18n, t } = useTranslation();
+
   const handleChange = () => {
-    setIdioma(idioma === 'pt' ? 'en' : 'pt');
+    i18n.changeLanguage(i18n.language === 'pt' ? 'en' : 'pt');
   };
 
   return (
     <button
       onClick={handleChange}
       className={`btn-idioma d-flex align-items-center gap-2 ${className}`}
-      aria-label="Trocar idioma"
-      title="Trocar idioma"
+      aria-label={t('nav.switchLanguage')}
+      title={t('nav.switchLanguage')}
       type="button"
     >
-      {idioma === 'pt' ? 'English' : 'Português'}
+      {t('nav.switchLabel')}
     </button>
   );
 }
