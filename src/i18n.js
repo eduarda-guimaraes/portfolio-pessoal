@@ -46,18 +46,56 @@ const resources = {
       technologies: {
         title: 'Tecnologias e ferramentas',
         items: [
-          'Java',
-          'JavaScript',
-          'React',
-          'Node.js',
-          'Python',
-          'Firebase',
-          'OpenAI API',
-          'Git',
-          'GitHub',
-          'HTML',
-          'CSS',
-          'Bootstrap',
+          {
+            name: 'Java',
+            icon: 'filetype-java',
+            color: '#e76f00',
+          },
+          {
+            name: 'TypeScript',
+            icon: 'filetype-tsx',
+            color: '#3178c6',
+          },
+          {
+            name: 'React',
+            icon: 'filetype-jsx',
+            color: '#0ea5e9',
+          },
+          {
+            name: 'Node.js',
+            icon: 'terminal',
+            color: '#2f855a',
+          },
+          {
+            name: 'Python',
+            icon: 'terminal-split',
+            color: '#3776ab',
+          },
+          {
+            name: 'PL/SQL',
+            icon: 'database-fill-gear',
+            color: '#c2410c',
+          },
+          {
+            name: 'Firebase',
+            icon: 'hdd-stack-fill',
+            color: '#f59e0b',
+          },
+          {
+            name: 'OpenAI API',
+            icon: 'cpu-fill',
+            color: '#10a37f',
+          },
+          {
+            name: 'Bootstrap',
+            icon: 'bootstrap',
+            color: '#7952b3',
+          },
+          {
+            name: 'Cypress',
+            icon: 'bug-fill',
+            color: '#2e7d32',
+          },
         ],
       },
       projects: {
@@ -220,18 +258,56 @@ const resources = {
       technologies: {
         title: 'Technologies and tools',
         items: [
-          'Java',
-          'JavaScript',
-          'React',
-          'Node.js',
-          'Python',
-          'Firebase',
-          'OpenAI API',
-          'Git',
-          'GitHub',
-          'HTML',
-          'CSS',
-          'Bootstrap',
+          {
+            name: 'Java',
+            icon: 'filetype-java',
+            color: '#e76f00',
+          },
+          {
+            name: 'TypeScript',
+            icon: 'filetype-tsx',
+            color: '#3178c6',
+          },
+          {
+            name: 'React',
+            icon: 'filetype-jsx',
+            color: '#0ea5e9',
+          },
+          {
+            name: 'Node.js',
+            icon: 'terminal',
+            color: '#2f855a',
+          },
+          {
+            name: 'Python',
+            icon: 'terminal-split',
+            color: '#3776ab',
+          },
+          {
+            name: 'PL/SQL',
+            icon: 'database-fill-gear',
+            color: '#c2410c',
+          },
+          {
+            name: 'Firebase',
+            icon: 'hdd-stack-fill',
+            color: '#f59e0b',
+          },
+          {
+            name: 'OpenAI API',
+            icon: 'cpu-fill',
+            color: '#10a37f',
+          },
+          {
+            name: 'Bootstrap',
+            icon: 'bootstrap',
+            color: '#7952b3',
+          },
+          {
+            name: 'Cypress',
+            icon: 'bug-fill',
+            color: '#2e7d32',
+          },
         ],
       },
       projects: {

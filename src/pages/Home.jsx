@@ -107,9 +107,13 @@ function Home() {
           </h5>
           <div className="d-flex flex-wrap gap-3">
             {technologies.map((technology) => (
-              <div key={technology} className="tech-badge d-flex align-items-center gap-2">
-                <i className="bi bi-code-slash"></i>
-                <span>{technology}</span>
+              <div key={technology.name} className="tech-badge d-flex align-items-center gap-2">
+                <i
+                  className={`bi bi-${technology.icon}`}
+                  style={{ color: technology.color ?? 'currentColor' }}
+                  aria-hidden="true"
+                ></i>
+                <span>{technology.name}</span>
               </div>
             ))}
           </div>
