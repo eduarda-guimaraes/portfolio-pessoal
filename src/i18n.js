@@ -31,71 +31,23 @@ const resources = {
       languages: {
         title: 'Idiomas',
         items: [
-          {
-            name: 'Português',
-            level: 'Nativo',
-            icon: 'globe2',
-          },
-          {
-            name: 'Inglês',
-            level: 'Avançado',
-            icon: 'globe',
-          },
+          { name: 'Português', level: 'Nativo', icon: 'globe2' },
+          { name: 'Inglês', level: 'Avançado', icon: 'globe' },
         ],
       },
       technologies: {
         title: 'Tecnologias e ferramentas',
         items: [
-          {
-            name: 'Java',
-            icon: 'filetype-java',
-            color: '#e76f00',
-          },
-          {
-            name: 'TypeScript',
-            icon: 'filetype-tsx',
-            color: '#3178c6',
-          },
-          {
-            name: 'React',
-            icon: 'filetype-jsx',
-            color: '#0ea5e9',
-          },
-          {
-            name: 'Node.js',
-            icon: 'terminal',
-            color: '#2f855a',
-          },
-          {
-            name: 'Python',
-            icon: 'terminal-split',
-            color: '#3776ab',
-          },
-          {
-            name: 'PL/SQL',
-            icon: 'database-fill-gear',
-            color: '#c2410c',
-          },
-          {
-            name: 'Firebase',
-            icon: 'hdd-stack-fill',
-            color: '#f59e0b',
-          },
-          {
-            name: 'OpenAI API',
-            icon: 'cpu-fill',
-            color: '#10a37f',
-          },
-          {
-            name: 'Bootstrap',
-            icon: 'bootstrap',
-            color: '#7952b3',
-          },
-          {
-            name: 'Cypress',
-            icon: 'bug-fill',
-            color: '#2e7d32',
-          },
+          { name: 'Java', icon: 'filetype-java', color: '#e76f00' },
+          { name: 'TypeScript', icon: 'filetype-tsx', color: '#3178c6' },
+          { name: 'React', icon: 'filetype-jsx', color: '#0ea5e9' },
+          { name: 'Node.js', icon: 'terminal', color: '#2f855a' },
+          { name: 'Python', icon: 'terminal-split', color: '#3776ab' },
+          { name: 'PL/SQL', icon: 'database-fill-gear', color: '#c2410c' },
+          { name: 'Firebase', icon: 'hdd-stack-fill', color: '#f59e0b' },
+          { name: 'OpenAI API', icon: 'cpu-fill', color: '#10a37f' },
+          { name: 'Bootstrap', icon: 'bootstrap', color: '#7952b3' },
+          { name: 'Cypress', icon: 'bug-fill', color: '#2e7d32' },
         ],
       },
       projects: {
@@ -105,48 +57,17 @@ const resources = {
             title: 'Vocational Test',
             badge: 'TCC',
             description:
-              'Plataforma full-stack com inteligência artificial para orientação vocacional, desenvolvida como Trabalho de Conclusão de Curso. O projeto utiliza <strong>React</strong>, <strong>Python</strong>,<strong> Firebase</strong> e <strong>OpenAI</strong> para oferecer recomendações personalizadas com base nas respostas do usuário.',
+              'Plataforma full-stack com inteligência artificial para orientação vocacional, desenvolvida como Trabalho de Conclusão de Curso. O projeto utiliza <strong>React</strong>, <strong>Python</strong>, <strong>Firebase</strong> e <strong>OpenAI</strong> para oferecer recomendações personalizadas com base nas respostas do usuário.',
             links: [
-              {
-                label: 'Acessar site',
-                href: 'https://www.vocationaltest.com.br',
-                variant: 'purple',
-              },
-              {
-                label: 'Ver repositório',
-                href: 'https://github.com/eduarda-guimaraes/Vocational-Test',
-                variant: 'github',
-              },
+              { label: 'Acessar site', href: 'https://www.vocationaltest.com.br', variant: 'purple' },
+              { label: 'Ver repositório', href: 'https://github.com/eduarda-guimaraes/Vocational-Test', variant: 'github' },
             ],
           },
           {
-            title: 'Batalha Naval em Java',
+            title: 'Sistema de Gestão Escolar - JPA & Hibernate',
             description:
-              'Jogo baseado no clássico Batalha Naval com modos jogador vs. jogador e jogador vs. máquina, reforçando lógica, orientação a objetos e estruturação de regras.',
-            links: [
-              {
-                label: 'Ver repositório',
-                href: 'https://github.com/eduarda-guimaraes/Batalha-Naval',
-                variant: 'github',
-              },
-            ],
-          },
-          {
-            title: 'Patinhas & Cia',
-            description:
-              'Projeto de pet shop com e-commerce, foco em responsividade e persistência de dados no navegador usando <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.',
-            links: [
-              {
-                label: 'Acessar site',
-                href: 'https://eduarda-guimaraes.github.io/Teach3035-PetShop/',
-                variant: 'purple',
-              },
-              {
-                label: 'Ver repositório',
-                href: 'https://github.com/eduarda-guimaraes/Teach3035-PetShop',
-                variant: 'github',
-              },
-            ],
+              'Sistema console para gerenciar alunos, cursos e matrículas usando Java, JPA/Hibernate e PostgreSQL. Inclui CRUD, buscas e relatórios formatados. Configure o banco e ajuste `persistence.xml` para executar.',
+            links: [{ label: 'Ver repositório', href: '#', variant: 'github' }],
           },
         ],
       },
@@ -192,24 +113,9 @@ const resources = {
       contact: {
         title: 'Contato',
         items: [
-          {
-            icon: 'envelope-fill',
-            label: 'aeduardaguimaraes@gmail.com',
-            href: 'mailto:aeduardaguimaraes@gmail.com',
-            color: '#b39ddb',
-          },
-          {
-            icon: 'linkedin',
-            label: 'linkedin.com/in/eduardaguimaraess/',
-            href: 'https://www.linkedin.com/in/eduardaguimaraess/',
-            color: '#0a66c2',
-          },
-          {
-            icon: 'github',
-            label: 'github.com/eduarda-guimaraes',
-            href: 'https://github.com/eduarda-guimaraes',
-            color: '#333',
-          },
+          { icon: 'envelope-fill', label: 'aeduardaguimaraes@gmail.com', href: 'mailto:aeduardaguimaraes@gmail.com', color: '#b39ddb' },
+          { icon: 'linkedin', label: 'linkedin.com/in/eduardaguimaraess/', href: 'https://www.linkedin.com/in/eduardaguimaraess/', color: '#0a66c2' },
+          { icon: 'github', label: 'github.com/eduarda-guimaraes', href: 'https://github.com/eduarda-guimaraes', color: '#333' },
         ],
       },
     },
@@ -243,71 +149,23 @@ const resources = {
       languages: {
         title: 'Languages',
         items: [
-          {
-            name: 'Portuguese',
-            level: 'Native',
-            icon: 'globe2',
-          },
-          {
-            name: 'English',
-            level: 'Advanced',
-            icon: 'globe',
-          },
+          { name: 'Portuguese', level: 'Native', icon: 'globe2' },
+          { name: 'English', level: 'Advanced', icon: 'globe' },
         ],
       },
       technologies: {
         title: 'Technologies and tools',
         items: [
-          {
-            name: 'Java',
-            icon: 'filetype-java',
-            color: '#e76f00',
-          },
-          {
-            name: 'TypeScript',
-            icon: 'filetype-tsx',
-            color: '#3178c6',
-          },
-          {
-            name: 'React',
-            icon: 'filetype-jsx',
-            color: '#0ea5e9',
-          },
-          {
-            name: 'Node.js',
-            icon: 'terminal',
-            color: '#2f855a',
-          },
-          {
-            name: 'Python',
-            icon: 'terminal-split',
-            color: '#3776ab',
-          },
-          {
-            name: 'PL/SQL',
-            icon: 'database-fill-gear',
-            color: '#c2410c',
-          },
-          {
-            name: 'Firebase',
-            icon: 'hdd-stack-fill',
-            color: '#f59e0b',
-          },
-          {
-            name: 'OpenAI API',
-            icon: 'cpu-fill',
-            color: '#10a37f',
-          },
-          {
-            name: 'Bootstrap',
-            icon: 'bootstrap',
-            color: '#7952b3',
-          },
-          {
-            name: 'Cypress',
-            icon: 'bug-fill',
-            color: '#2e7d32',
-          },
+          { name: 'Java', icon: 'filetype-java', color: '#e76f00' },
+          { name: 'TypeScript', icon: 'filetype-tsx', color: '#3178c6' },
+          { name: 'React', icon: 'filetype-jsx', color: '#0ea5e9' },
+          { name: 'Node.js', icon: 'terminal', color: '#2f855a' },
+          { name: 'Python', icon: 'terminal-split', color: '#3776ab' },
+          { name: 'PL/SQL', icon: 'database-fill-gear', color: '#c2410c' },
+          { name: 'Firebase', icon: 'hdd-stack-fill', color: '#f59e0b' },
+          { name: 'OpenAI API', icon: 'cpu-fill', color: '#10a37f' },
+          { name: 'Bootstrap', icon: 'bootstrap', color: '#7952b3' },
+          { name: 'Cypress', icon: 'bug-fill', color: '#2e7d32' },
         ],
       },
       projects: {
@@ -317,48 +175,17 @@ const resources = {
             title: 'Vocational Test',
             badge: 'Capstone Project',
             description:
-              'An AI-powered full-stack platform for vocational guidance, developed as my capstone project. It uses <strong>React</strong>, <strong>Python</strong>, <strong>Firebase</strong>, and<strong> OpenAI</strong> to deliver personalized career recommendations based on user responses.',
+              'An AI-powered full-stack platform for vocational guidance, developed as my capstone project. It uses <strong>React</strong>, <strong>Python</strong>, <strong>Firebase</strong>, and <strong>OpenAI</strong> to deliver personalized career recommendations based on user responses.',
             links: [
-              {
-                label: 'View site',
-                href: 'https://www.vocationaltest.com.br',
-                variant: 'purple',
-              },
-              {
-                label: 'View repository',
-                href: 'https://github.com/eduarda-guimaraes/Vocational-Test',
-                variant: 'github',
-              },
+              { label: 'View site', href: 'https://www.vocationaltest.com.br', variant: 'purple' },
+              { label: 'View repository', href: 'https://github.com/eduarda-guimaraes/Vocational-Test', variant: 'github' },
             ],
           },
           {
-            title: 'Battleship in Java',
+            title: 'School Management System - JPA & Hibernate',
             description:
-              'A Java implementation of the classic Battleship game, reinforcing logic, object-oriented concepts, and gameplay rules.',
-            links: [
-              {
-                label: 'View repository',
-                href: 'https://github.com/eduarda-guimaraes/Batalha-Naval',
-                variant: 'github',
-              },
-            ],
-          },
-          {
-            title: 'Patinhas & Cia',
-            description:
-              'A pet shop and e-commerce project focused on responsive UI and browser-based persistence using<strong> HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.',
-            links: [
-              {
-                label: 'View site',
-                href: 'https://eduarda-guimaraes.github.io/Teach3035-PetShop/',
-                variant: 'purple',
-              },
-              {
-                label: 'View repository',
-                href: 'https://github.com/eduarda-guimaraes/Teach3035-PetShop',
-                variant: 'github',
-              },
-            ],
+              'Console system to manage students, courses and enrollments using Java, JPA/Hibernate and PostgreSQL. Includes CRUD, search and formatted reports. Configure your DB and update `persistence.xml` to run.',
+            links: [{ label: 'View repository', href: '#', variant: 'github' }],
           },
         ],
       },
@@ -385,43 +212,16 @@ const resources = {
           },
         ],
         education: [
-          {
-            title: 'Escola Técnica Estadual Monteiro Lobato',
-            subtitle: 'Technical High School, IT',
-            period: 'Feb 2023 - Aug 2026',
-            description:
-              'I built a solid foundation in software development and systems analysis while actively contributing to projects and group work that strengthened my communication and teamwork skills.',
-          },
-          {
-            title: 'Right Way Idiomas',
-            subtitle: 'English',
-            period: 'Feb 2018 - Dec 2021',
-            description:
-              'I developed strong reading, writing, listening, and speaking skills in English, which now helps me work comfortably with technical documentation and professional environments.',
-          },
+          { title: 'Escola Técnica Estadual Monteiro Lobato', subtitle: 'Technical High School, IT', period: 'Feb 2023 - Aug 2026', description: 'I built a solid foundation in software development and systems analysis while actively contributing to projects and group work that strengthened my communication and teamwork skills.' },
+          { title: 'Right Way Idiomas', subtitle: 'English', period: 'Feb 2018 - Dec 2021', description: 'I developed strong reading, writing, listening, and speaking skills in English, which now helps me work comfortably with technical documentation and professional environments.' },
         ],
       },
       contact: {
         title: 'Contact',
         items: [
-          {
-            icon: 'envelope-fill',
-            label: 'aeduardaguimaraes@gmail.com',
-            href: 'mailto:aeduardaguimaraes@gmail.com',
-            color: '#b39ddb',
-          },
-          {
-            icon: 'linkedin',
-            label: 'linkedin.com/in/eduardaguimaraess/',
-            href: 'https://www.linkedin.com/in/eduardaguimaraess/',
-            color: '#0a66c2',
-          },
-          {
-            icon: 'github',
-            label: 'github.com/eduarda-guimaraes',
-            href: 'https://github.com/eduarda-guimaraes',
-            color: '#333',
-          },
+          { icon: 'envelope-fill', label: 'aeduardaguimaraes@gmail.com', href: 'mailto:aeduardaguimaraes@gmail.com', color: '#b39ddb' },
+          { icon: 'linkedin', label: 'linkedin.com/in/eduardaguimaraess/', href: 'https://www.linkedin.com/in/eduardaguimaraess/', color: '#0a66c2' },
+          { icon: 'github', label: 'github.com/eduarda-guimaraes', href: 'https://github.com/eduarda-guimaraes', color: '#333' },
         ],
       },
     },

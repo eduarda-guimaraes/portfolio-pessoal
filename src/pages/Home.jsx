@@ -17,6 +17,7 @@ function Home() {
 
   const resumeFile = i18n.language === 'pt' ? cv : vr;
 
+
   return (
     <>
       <section
@@ -87,17 +88,22 @@ function Home() {
             {t('languages.title')}
           </h5>
           <div className="row gy-3">
-            {languages.map((item) => (
-              <div key={item.name} className="col-12 col-sm-6">
-                <div className="d-flex align-items-center gap-3">
-                  <i className={`bi bi-${item.icon}`} style={{ fontSize: '2rem', color: '#6a1b9a' }}></i>
-                  <div>
-                    <p className="fw-bold mb-1">{item.name}</p>
-                    <p className="text-muted mb-0">{item.level}</p>
+            {languages.map((item) => {
+              const pct = /portugu/i.test(item.name) ? 100 : 90;
+              return (
+                <div key={item.name} className="col-12 col-sm-6">
+                  <div className="skill">
+                    <div className="label">
+                      <span>{item.name}</span>
+                      <span>{pct}%</span>
+                    </div>
+                    <div className="skill-bar">
+                      <span style={{ width: `${pct}%` }}></span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
@@ -117,8 +123,10 @@ function Home() {
               </div>
             ))}
           </div>
+          {/* Top languages image removed per user request */}
         </div>
       </section>
+      {/* Contribution snake removed per user request */}
 
       <section
         id="projects"
@@ -131,10 +139,7 @@ function Home() {
 
         <div className="row">
           {projects.map((project, index) => (
-            <div
-              key={project.title}
-              className={index === 0 ? 'col-12 col-lg-6 mb-4' : 'col-12 col-md-6 col-lg-3 mb-4'}
-            >
+            <div key={project.title} className="col-12 col-md-6 col-lg-6 mb-4">
               <div className="card h-100 shadow-sm border-0" style={{ borderRadius: '1rem' }}>
                 <div className="card-body d-flex flex-column">
                   {project.badge ? (
