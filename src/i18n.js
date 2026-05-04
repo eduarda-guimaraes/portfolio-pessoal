@@ -67,7 +67,7 @@ const resources = {
             title: 'Sistema de Gestão Escolar - JPA & Hibernate',
             description:
               'Sistema console para gerenciar alunos, cursos e matrículas usando Java, JPA/Hibernate e PostgreSQL. Inclui CRUD, buscas e relatórios formatados. Configure o banco e ajuste `persistence.xml` para executar.',
-            links: [{ label: 'Ver repositório', href: '#', variant: 'github' }],
+            links: [{ label: 'Ver repositório', href: 'https://github.com/eduarda-guimaraes/sistema-de-cursos', variant: 'github' }],
           },
         ],
       },
