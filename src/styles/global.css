@@ -25,6 +25,7 @@ html, body {
 }
 
 :root{
+  color-scheme: light;
   --accent: #6a1b9a;        
   --accent-weak: #b39ddb;
   --text: #333;
@@ -40,19 +41,6 @@ html, body {
   --shadow-md: 0 16px 40px rgba(0,0,0,0.12);
 
   --radius-xl: 16px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root{
-    --text: #000000;
-    --text-weak: #6a1b9a;
-
-    --card-bg: rgba(20,24,33,0.75);
-    --card-border: rgba(255,255,255,0.09);
-
-    --shadow-sm: 0 6px 18px rgba(0,0,0,0.45);
-    --shadow-md: 0 18px 48px rgba(0,0,0,0.6);
-  }
 }
 
 h2{
@@ -156,17 +144,6 @@ main.container {
   background: #0d1117;
   box-shadow: 0 10px 24px rgba(13,17,23,0.22);
   transform: translateY(-1px);
-}
-
-@media (prefers-color-scheme: dark){
-  .btn-outline-github{
-    color: #acaeb0;
-    border-color: #acaeb0;
-  }
-  .btn-outline-github:hover{
-    background: #e7e9ee;
-    color: #0d1117;
-  }
 }
 
 .contact-link-card, .card {
@@ -339,7 +316,7 @@ footer {
   font-weight: 600;
 }
 
-/* Skill / language bars (como no currículo) */
+/* Skill / language bars (como no currÃ­culo) */
 .skill {
   margin-bottom: 0.9rem;
 }
@@ -386,3 +363,119 @@ footer {
   max-width: 720px;
   margin-left: 0;
 }
+
+.project-tech-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .65rem;
+  border: 1px solid rgba(106, 27, 154, .2);
+  border-radius: 999px;
+  background: rgba(106, 27, 154, .08);
+  color: #5b1686;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.btn-tema {
+  display: inline-grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  place-items: center;
+  border: 1px solid rgba(106, 27, 154, .35);
+  border-radius: 50%;
+  color: var(--accent);
+  background: transparent;
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+}
+.btn-tema:hover { background: rgba(106, 27, 154, .12); transform: rotate(-8deg); }
+.btn-tema:focus-visible { outline: 3px solid var(--accent-weak); outline-offset: 3px; }
+
+/* Dark theme overrides; light remains the default palette above. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --accent: #c084fc;
+  --accent-weak: #a78bfa;
+  --accent-strong: #7e22ce;
+  --accent-gradient: linear-gradient(100deg, #c084fc 0%, #8b5cf6 100%);
+  --text: #f1f0f5;
+  --text-weak: #aaa7b5;
+  --card-bg: #191720;
+  --card-border: rgba(255, 255, 255, .09);
+}
+:root[data-theme="dark"] body { background: #100f14; color: var(--text); }
+:root[data-theme="dark"] .navbar {
+  background: rgba(20, 18, 26, .94) !important;
+  border-color: rgba(255,255,255,.08) !important;
+  backdrop-filter: blur(16px);
+}
+:root[data-theme="dark"] .navbar-brand,
+:root[data-theme="dark"] .navbar .text-dark,
+:root[data-theme="dark"] .nav-link { color: #e9e5f0 !important; }
+:root[data-theme="dark"] .navbar-brand:hover,
+:root[data-theme="dark"] .nav-link:hover,
+:root[data-theme="dark"] .text-roxo-ativo { color: #d8b4fe !important; }
+:root[data-theme="dark"] .navbar-toggler { border-color: rgba(255,255,255,.2); }
+:root[data-theme="dark"] .navbar-toggler-icon { filter: invert(1); }
+:root[data-theme="dark"] h1,
+:root[data-theme="dark"] h2,
+:root[data-theme="dark"] h3,
+:root[data-theme="dark"] h4,
+:root[data-theme="dark"] h5,
+:root[data-theme="dark"] h6,
+:root[data-theme="dark"] .card-title { color: #f5f3f8; }
+:root[data-theme="dark"] h2,
+:root[data-theme="dark"] #projects h2,
+:root[data-theme="dark"] #experience h2,
+:root[data-theme="dark"] #contact h2,
+:root[data-theme="dark"] #about h5,
+:root[data-theme="dark"] #about p[style*="color"] { color: #c084fc !important; }
+:root[data-theme="dark"] .text-muted { color: #aaa7b5 !important; }
+:root[data-theme="dark"] #about .border-top { border-color: rgba(255,255,255,.12) !important; }
+:root[data-theme="dark"] .profile-chip,
+:root[data-theme="dark"] .tech-badge {
+  background: rgba(192,132,252,.10);
+  color: #dfc2ff;
+  border-color: rgba(192,132,252,.32);
+}
+:root[data-theme="dark"] .tech-badge i { color: inherit !important; }
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .timeline-card {
+  color: var(--text);
+  background: #191720;
+  border: 1px solid rgba(255,255,255,.08) !important;
+}
+:root[data-theme="dark"] .badge.text-bg-light {
+  color: #e4d9f2 !important;
+  background: #292332 !important;
+  border-color: rgba(255,255,255,.12) !important;
+}
+:root[data-theme="dark"] .timeline-item {
+  color: #e8e5ed;
+  background: rgba(192,132,252,.055);
+  border-color: rgba(192,132,252,.16);
+}
+:root[data-theme="dark"] .timeline-tag { background: #7e22ce; }
+:root[data-theme="dark"] .btn-roxo-outline { color: #d8b4fe; border-color: #a855f7; }
+:root[data-theme="dark"] .btn-roxo-outline:hover { background: #7e22ce; color: white; }
+:root[data-theme="dark"] .btn-outline-github { color: #dedbe5; border-color: #aaa7b5; }
+:root[data-theme="dark"] .btn-outline-github:hover { background: #dedbe5; color: #17151f; }
+:root[data-theme="dark"] .btn-outline-secondary { color: #e4dfeb; border-color: #777180; }
+:root[data-theme="dark"] .btn-outline-secondary:hover { color: #17151f; background: #e4dfeb; }
+:root[data-theme="dark"] .skill .label { color: #e9e5f0; }
+:root[data-theme="dark"] .skill-bar { background: #2a2732; }
+:root[data-theme="dark"] .contact-link-card {
+  color: #f1f0f5 !important;
+  background: #191720 !important;
+  border-color: rgba(255,255,255,.09) !important;
+}
+:root[data-theme="dark"] footer { background: #17151d !important; color: #aaa7b5 !important; }
+:root[data-theme="dark"] .project-tech-tag {
+  border-color: rgba(192,132,252,.28);
+  background: rgba(192,132,252,.10);
+  color: #dfc2ff;
+}
+:root[data-theme="dark"] .btn-tema { border-color: rgba(192,132,252,.45); }
+:root[data-theme="dark"] .btn-tema:hover { background: rgba(192,132,252,.14); }

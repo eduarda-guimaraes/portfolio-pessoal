@@ -8,6 +8,14 @@ import './styles/global.css';
 function App() {
   const { i18n } = useTranslation();
   const [secaoAtiva, setSecaoAtiva] = useState('about');
+  const [tema, setTema] = useState(() => localStorage.getItem('portfolio-tema') || 'light');
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = tema;
+    localStorage.setItem('portfolio-tema', tema);
+  }, [tema]);
+
+  const alternarTema = () => setTema((atual) => (atual === 'dark' ? 'light' : 'dark'));
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,7 +40,7 @@ function App() {
 
   return (
     <>
-      <Header secaoAtiva={secaoAtiva} />
+      <Header secaoAtiva={secaoAtiva} tema={tema} alternarTema={alternarTema} />
       <main>
         <Home />
       </main>

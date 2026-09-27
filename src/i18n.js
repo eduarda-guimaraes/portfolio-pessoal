@@ -59,7 +59,7 @@ const resources = {
             description:
               'Plataforma full-stack com inteligência artificial para orientação vocacional, desenvolvida como Trabalho de Conclusão de Curso. O projeto utiliza <strong>React</strong>, <strong>Python</strong>, <strong>Firebase</strong> e <strong>OpenAI</strong> para oferecer recomendações personalizadas com base nas respostas do usuário.',
             links: [
-              { label: 'Acessar site', href: 'https://www.vocationaltest.com.br', variant: 'purple' },
+              { label: 'Acessar site', href: 'https://vocational-test-90cd1.web.app', variant: 'purple' },
               { label: 'Ver repositório', href: 'https://github.com/eduarda-guimaraes/Vocational-Test', variant: 'github' },
             ],
           },
@@ -68,6 +68,13 @@ const resources = {
             description:
               'Sistema console para gerenciar alunos, cursos e matrículas usando Java, JPA/Hibernate e PostgreSQL. Inclui CRUD, buscas e relatórios formatados. Configure o banco e ajuste `persistence.xml` para executar.',
             links: [{ label: 'Ver repositório', href: 'https://github.com/eduarda-guimaraes/sistema-de-cursos', variant: 'github' }],
+          },
+          {
+            title: 'TeachGram',
+            description:
+              'Rede social fullstack com autentica\u00e7\u00e3o, usu\u00e1rios, posts e amizades, desenvolvida com Java, Spring Boot, React e TypeScript.',
+            technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+            links: [{ label: 'Ver repositório', href: 'https://github.com/eduarda-guimaraes/teachgram-desafio', variant: 'github' }],
           },
         ],
       },
@@ -94,6 +101,12 @@ const resources = {
           },
         ],
         education: [
+          {
+            title: 'Universidade Feevale',
+            subtitle: 'Bacharelado em Sistemas de Informação',
+            period: 'Jul 2026 - Atual',
+            description: 'Atualmente curso Sistemas de Informação para aprofundar meus conhecimentos em tecnologia e ampliar minha visão sobre desenvolvimento e qualidade de software.',
+          },
           {
             title: 'Escola Técnica Estadual Monteiro Lobato',
             subtitle: 'Ensino Médio Técnico em Informática',
@@ -177,7 +190,7 @@ const resources = {
             description:
               'An AI-powered full-stack platform for vocational guidance, developed as my capstone project. It uses <strong>React</strong>, <strong>Python</strong>, <strong>Firebase</strong>, and <strong>OpenAI</strong> to deliver personalized career recommendations based on user responses.',
             links: [
-              { label: 'View site', href: 'https://www.vocationaltest.com.br', variant: 'purple' },
+              { label: 'View site', href: 'https://vocational-test-90cd1.web.app', variant: 'purple' },
               { label: 'View repository', href: 'https://github.com/eduarda-guimaraes/Vocational-Test', variant: 'github' },
             ],
           },
@@ -186,6 +199,13 @@ const resources = {
             description:
               'Console system to manage students, courses and enrollments using Java, JPA/Hibernate and PostgreSQL. Includes CRUD, search and formatted reports. Configure your DB and update `persistence.xml` to run.',
             links: [{ label: 'View repository', href: '#', variant: 'github' }],
+          },
+          {
+            title: 'TeachGram',
+            description:
+              'Full-stack social network with authentication, users, posts, and friendships, built with Java, Spring Boot, React, and TypeScript.',
+            technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+            links: [{ label: 'View repository', href: 'https://github.com/eduarda-guimaraes/teachgram-desafio', variant: 'github' }],
           },
         ],
       },
@@ -212,6 +232,7 @@ const resources = {
           },
         ],
         education: [
+          { title: 'Universidade Feevale', subtitle: 'Bachelor’s degree in Information Systems', period: 'Jul 2026 - Present', description: 'I am pursuing Information Systems to deepen my knowledge of technology and broaden my perspective on software development and quality.' },
           { title: 'Escola Técnica Estadual Monteiro Lobato', subtitle: 'Technical High School, IT', period: 'Feb 2023 - Aug 2026', description: 'I built a solid foundation in software development and systems analysis while actively contributing to projects and group work that strengthened my communication and teamwork skills.' },
           { title: 'Right Way Idiomas', subtitle: 'English', period: 'Feb 2018 - Dec 2021', description: 'I developed strong reading, writing, listening, and speaking skills in English, which now helps me work comfortably with technical documentation and professional environments.' },
         ],

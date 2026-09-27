@@ -4,7 +4,7 @@ import TrocarIdioma from './TrocarIdioma';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function Header({ secaoAtiva }) {
+function Header({ secaoAtiva, tema, alternarTema }) {
   const { t } = useTranslation();
   const secoes = ['about', 'projects', 'experience', 'contact'];
   const linkClass = (id) =>
@@ -37,8 +37,13 @@ function Header({ secaoAtiva }) {
             {t('nav.brand')}
           </a>
 
-          <div className="d-none d-md-flex ms-md-4 ms-lg-5">
+          <div className="d-none d-md-flex align-items-center gap-2 ms-md-4 ms-lg-5">
             <TrocarIdioma className="btn-sm" />
+            <button className="btn-tema" type="button" onClick={alternarTema}
+              aria-label={tema === 'dark' ? 'Ativar tema claro' : 'Ativar tema escuro'}
+              title={tema === 'dark' ? 'Tema claro' : 'Tema escuro'}>
+              <span aria-hidden="true">{tema === 'dark' ? '☀' : '☾'}</span>
+            </button>
           </div>
 
           <button
@@ -62,8 +67,13 @@ function Header({ secaoAtiva }) {
                   </a>
                 </li>
               ))}
-              <li className="nav-item d-md-none mt-2">
-                <TrocarIdioma className="w-100" />
+              <li className="nav-item d-md-none mt-2 d-flex align-items-center gap-2">
+                <TrocarIdioma />
+                <button className="btn-tema" type="button" onClick={alternarTema}
+                  aria-label={tema === 'dark' ? 'Ativar tema claro' : 'Ativar tema escuro'}
+                  title={tema === 'dark' ? 'Tema claro' : 'Tema escuro'}>
+                  <span aria-hidden="true">{tema === 'dark' ? '☀' : '☾'}</span>
+                </button>
               </li>
             </ul>
           </div>

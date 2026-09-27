@@ -154,6 +154,13 @@ function Home() {
                       components={{ strong: <strong /> }}
                     />
                   </p>
+                  {project.technologies?.length ? (
+                    <div className="project-tech-list d-flex flex-wrap gap-2 mb-3">
+                      {project.technologies.map((technology) => (
+                        <span className="project-tech-tag" key={technology}>{technology}</span>
+                      ))}
+                    </div>
+                  ) : null}
                   <div className="d-flex flex-wrap gap-2 mt-auto">
                     {project.links.map((link) => (
                       <a
