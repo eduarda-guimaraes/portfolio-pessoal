@@ -21,7 +21,7 @@ const resources = {
         name: 'Eduarda Guimarães',
         role: 'QA Tester & Full-Stack Developer',
         about:
-          'Recentemente efetivada como <strong>QA Tester</strong>, consolidei minha transição para a área de<strong> Qualidade de Software</strong> unindo minha base técnica em<strong> Desenvolvimento Full-Stack</strong> com uma visão crítica sobre o ciclo de vida das aplicações.<br /><br />Ter experiência prática com <strong>Java</strong>, <strong>JavaScript</strong>, <strong>React</strong> e<strong> Node.js</strong> me permite realizar testes mais assertivos e técnicos, compreendendo a arquitetura por trás de cada bug.<br /><br />Concluí minha trajetória técnica na <strong>Escola Técnica Estadual Monteiro Lobato (CIMOL)</strong> e hoje foco em garantir entregas de alta performance e usabilidade em colaboração com o time de desenvolvimento.',
+          'Atualmente atuo como <strong>QA Tester</strong>, unindo minha base em <strong>Desenvolvimento Full-Stack</strong> a uma visão analítica sobre a qualidade das aplicações.<br /><br />Sou apaixonada por <strong>aprender novas tecnologias, resolver problemas e entender como as aplicações funcionam</strong>. No trabalho, atuo com <strong>testes, Postman e PL/SQL</strong>, realizando testes de APIs e criação e análise de queries em banco de dados. Paralelamente, estudo <strong>Cypress</strong> e outras tecnologias de automação de testes, ampliando meus conhecimentos em QA.<br /><br />Minha experiência com <strong>Java, TypeScript, React e Node.js</strong> também contribui para uma comunicação mais técnica e próxima com o time de desenvolvimento.<br /><br />Formada em <strong>Técnico em Informática pelo CIMOL</strong> e graduanda em <strong>Sistemas de Informação</strong>, busco evoluir continuamente em <strong>Qualidade de Software e Desenvolvimento Full-Stack</strong>.',
         chips: ['Brasil'],
         contactButton: 'Fale comigo',
         resumeButton: 'Baixar CV',
@@ -44,6 +44,7 @@ const resources = {
           { name: 'Node.js', icon: 'terminal', color: '#2f855a' },
           { name: 'Python', icon: 'terminal-split', color: '#3776ab' },
           { name: 'PL/SQL', icon: 'database-fill-gear', color: '#c2410c' },
+          { name: 'Postman', icon: 'send-fill', color: '#ff6c37' },
           { name: 'Firebase', icon: 'hdd-stack-fill', color: '#f59e0b' },
           { name: 'OpenAI API', icon: 'cpu-fill', color: '#10a37f' },
           { name: 'Bootstrap', icon: 'bootstrap', color: '#7952b3' },
@@ -152,7 +153,7 @@ const resources = {
         name: 'Eduarda Guimarães',
         role: 'QA Tester & Full-Stack Developer',
         about:
-          'Recently hired as a <strong>QA Tester</strong>, I consolidated my transition into<strong> Software Quality</strong> by combining my<strong> Full-Stack Development</strong> background with a critical view of the application lifecycle.<br /><br />Hands-on experience with <strong>Java</strong>, <strong>JavaScript</strong>, <strong>React</strong>, and <strong>Node.js</strong> allows me to approach testing in a more technical and assertive way, understanding the architecture behind each bug.<br /><br />I completed my technical journey at <strong>Escola Técnica Estadual Monteiro Lobato (CIMOL)</strong>, and today I focus on helping teams ship high-performance and user-friendly products.',
+          'I currently work as a <strong>QA Tester</strong>, combining my <strong>Full-Stack Development</strong> background with an analytical perspective on application quality.<br /><br />I am passionate about <strong>learning new technologies, solving problems, and understanding how applications work</strong>. At work, I use <strong>testing, Postman, and PL/SQL</strong> to test APIs and create and analyze database queries. In parallel, I am studying <strong>Cypress</strong> and other test automation technologies to expand my QA knowledge.<br /><br />My experience with <strong>Java, TypeScript, React, and Node.js</strong> also helps me communicate more effectively with the development team on technical topics.<br /><br />I hold a <strong>Technical Diploma in IT from CIMOL</strong> and am pursuing a <strong>Bachelor’s degree in Information Systems</strong>. I am committed to continuous growth in <strong>Software Quality and Full-Stack Development</strong>.',
         chips: ['Brazil'],
         contactButton: 'Contact Me',
         resumeButton: 'Download Resume',
@@ -175,6 +176,7 @@ const resources = {
           { name: 'Node.js', icon: 'terminal', color: '#2f855a' },
           { name: 'Python', icon: 'terminal-split', color: '#3776ab' },
           { name: 'PL/SQL', icon: 'database-fill-gear', color: '#c2410c' },
+          { name: 'Postman', icon: 'send-fill', color: '#ff6c37' },
           { name: 'Firebase', icon: 'hdd-stack-fill', color: '#f59e0b' },
           { name: 'OpenAI API', icon: 'cpu-fill', color: '#10a37f' },
           { name: 'Bootstrap', icon: 'bootstrap', color: '#7952b3' },
